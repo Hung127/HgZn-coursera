@@ -7,6 +7,8 @@
     /* Styles go here. */
       header li {
         list-style: none;
+        float:left;
+        clear: left;
       }
 
       header a:link, a:visited {
@@ -16,7 +18,7 @@
         background-color: #759242;
         width:110px;
         display:block;
-        margin-bottom: 3px;
+        margin: 1px 0px 3px 0px;
         padding: 3px;
         /* Creating transitions. */
         transition: background-color 0.25s, color 0.25s, padding 0.25s;
@@ -36,6 +38,12 @@
         background-color: #E6E8FF;
       }
 
+      ul {
+        padding: 0px
+      }
+      .NeedClearing {
+        clear: left;
+      }
 
     </style>
   </head>
@@ -50,7 +58,7 @@
         <li><a href="http://www.facebook.com/hgzn113" target="_blank"><b>Facebook</b></a></li>
       </ul>
     </header>
-    <hr>
+    <hr class="NeedClearing">
     <section>
       <h2>These are some div tags</h2>
       <div>DIV 1</div>
