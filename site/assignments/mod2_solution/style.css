@@ -12,10 +12,26 @@ body {
 h1 {
     text-align: center;
     font-size: 50px;
+    margin-bottom: 60px;
 }
 
 .row {
     width: 100%;
+}
+
+p span {
+    height: max-content;
+    padding: 10px;
+    background-color: #ADA779;
+    border: black solid 1px;
+    border-right: none;
+    border-top: none;
+    text-align: center;
+    right: 0px;
+    top: 0px;
+    /* I need to use absolute position because I need to align the title right */
+    position: absolute;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 section {
@@ -24,24 +40,30 @@ section {
     margin-right: auto;
 }
 
-p {
+section > p {
     width: 95%;
     height: 230px;
     overflow: auto;
-    margin-right: auto;
     margin-left: auto;
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 2%;
     background-color: #8BAAAD;
     border:1px solid #2B303A;
     font-size: 18px;
+    position: relative;
     /* Adding some transitions */
     transition: background-color 0.5s, color 0.5s;
 }
 
-p:hover {
+p:hover{
     background-color: #007FFF;
     color: #FFBF00;
+}
+
+p:hover span {
+    background-color: #403D99;
+    color: #EACCFF;
 }
 
 
