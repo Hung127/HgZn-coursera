@@ -1,29 +1,41 @@
-
+/* Use the border-box model for all elements */
 * {
     box-sizing: border-box;
 }
 
+
+/* Set the body font, text-color and background color */
 body {
     font-family: Tahoma, sans-serif;
     color: #2B303A;
     background-color: #F4FFF8;
 }
 
+/* Center the h1 element, set the font-size and add margin-bottom */
 h1 {
     text-align: center;
     font-size: 50px;
     margin-bottom: 60px;
 }
 
+/* Center the section and set the width of each section*/
+section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Set the width of the row element to 100% */
 .row {
     width: 100%;
 }
 
-p span {
+/* Style the content span within each section */
+.section-title {
     height: max-content;
     padding: 10px;
     background-color: #ADA779;
-    border: black solid 1px;
+    border: 1px solid black;
     border-right: none;
     border-top: none;
     text-align: center;
@@ -34,40 +46,39 @@ p span {
     transition: background-color 0.5s, color 0.5s;
 }
 
-section {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-section > p {
+p {
+    /* Set the paragraph width 95% of the section width */
     width: 95%;
     height: 230px;
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    padding: 2%;
+    padding: 10px;
     background-color: #8BAAAD;
     border:1px solid #2B303A;
     font-size: 18px;
     position: relative;
-    /* Adding some transitions */
+     /* Add transitions for background color and text color */
     transition: background-color 0.5s, color 0.5s;
 }
 
+
+/* Style the paragraph on hover */
 p:hover{
     background-color: #007FFF;
     color: #FFBF00;
 }
 
-p:hover span {
+/* Style the content span on hover */
+p:hover .section-title {
     background-color: #403D99;
     color: #EACCFF;
 }
 
-
+/* Use media queries for responsive design */
 @media (min-width: 1200px) {
+    /* Set the float property for large screens */
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
       float: left;
     }
@@ -111,6 +122,7 @@ p:hover span {
   
   /********** Medium devices only **********/
   @media (min-width: 992px) and (max-width: 1199px) {
+    /* Set the float property for medium screens */
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
       float: left;
     }
