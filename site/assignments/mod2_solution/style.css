@@ -12,22 +12,19 @@ body {
 }
 
 /* Center the h1 element, set the font-size and add margin-bottom */
-h1 {
+h1, footer p {
     text-align: center;
     font-size: 50px;
     margin-bottom: 60px;
+    clear: left;
 }
 
 /* Center the section and set the width of each section*/
 section {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Set the width of the row element to 100% */
-.row {
-    width: 100%;
+  border: 1px solid black;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Style the content span within each section */
@@ -46,14 +43,14 @@ section {
     transition: background-color 0.5s, color 0.5s;
 }
 
-p {
+header p {
     /* Set the paragraph width 95% of the section width */
     width: 95%;
     height: 230px;
     overflow: auto;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
     padding: 10px;
     background-color: #8BAAAD;
     border:1px solid #2B303A;
@@ -65,7 +62,7 @@ p {
 
 
 /* Style the paragraph on hover */
-p:hover{
+header p:hover{
     background-color: #007FFF;
     color: #FFBF00;
 }
@@ -161,5 +158,8 @@ p:hover .section-title {
     }
     .col-md-12 {
       width: 100%;
+    }
+    .col-md-12 p {
+      width: 97.30142566%;
     }
   }
