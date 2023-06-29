@@ -1,0 +1,41 @@
+body {
+    color: #19A7CE;
+    background-color: #2D4E6B;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#header-nav {
+    background-color: #63ACEB;
+}
+
+#logo-img {
+    background-image: url('../images/LogoSharkKiTransparent.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.navbar-brand a, .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand h1 {
+    font-size: 1.5em;
+    color: #EBB663;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-brand p { /* Lychee company */
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
+}
