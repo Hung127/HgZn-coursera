@@ -4,8 +4,8 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-#header-nav {
-    background-color: #63ACEB;
+#Navbar {
+    background-color: #63ACEB !important;
 }
 
 #logo-img {
