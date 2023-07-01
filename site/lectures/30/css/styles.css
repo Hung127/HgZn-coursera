@@ -51,6 +51,10 @@ body {
     height: 20px;
 }
 
+.icon-font {
+    margin-right: 5px;
+}
+
 #nav-list {
     text-align: center;
 }
