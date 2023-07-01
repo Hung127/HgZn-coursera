@@ -5,7 +5,7 @@ body {
 }
 
 #Navbar {
-    background-color: #63ACEB !important;
+    background-color: #19A7CE !important;
 }
 
 #logo-img {
@@ -15,6 +15,7 @@ body {
     width: 150px;
     height: 150px;
     float: left;
+    vertical-align: middle;
 }
 
 .navbar-brand a, .navbar-brand a:hover, .navbar-brand a:focus {
@@ -25,9 +26,12 @@ body {
     font-size: 1.5em;
     color: #EBB663;
     text-transform: uppercase;
-    margin-top: 0px;
     margin-bottom: 0px;
     font-family: 'Inter', sans-serif;
+}
+
+.align-center-to-logo {
+    margin-top: 25%;
 }
 
 .navbar-brand p { /* Lychee company */
@@ -38,4 +42,12 @@ body {
 
 .navbar-brand p span {
     vertical-align: middle;
+}
+
+#nav-list {
+    text-align: center;
+}
+
+#nav-list li  {
+    margin-right: 2em;
 }

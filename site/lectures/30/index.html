@@ -4,13 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Shark Ki</title>
-        <!--Import bootstrap, font, styles, JS-->
+        <!--Import bootstrap styles, icon fonts, script and jquery-->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <!--Import my styles and script-->
+        <link rel="stylesheet" href="css/styles.css">
         <script src="js/script.js"></script>
-
+        <!--Get google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -19,16 +21,19 @@
 
     <body>
         <header>
+            <!--Create a navbar-->
             <nav class="navbar navbar-expand-lg bg-body-tertiary" id="Navbar">
                 <div class="container">
                     <div class="navbar-header">
-                        <a href="index.html" class="d-none d-sm-block">
+                        <a href="index.html" class="d-none d-lg-block">
+                            <!--Add logo-->
                             <div id="logo-img" class="pull-left" alt="Logo image"></div>
                         </a>
                         <div class="navbar-brand">
-                            <a href="index.html"><h1>Shark Ki</h1></a>
+                            <!--I put here 2 "Shark Ki" for 2 screen sizes: lg and below lg-->
+                            <a href="index.html"><span class="align-center-to-logo d-none d-lg-block"><h1>Shark Ki</h1></span><h1 class="d-block d-sm-block d-lg-none">Shark Ki</h1></a>
                             <p>
-                                <img src="images/VaiCatMoi2.png" alt="Lychee Comppany">
+                                <span><img src="images/VaiCatMoi2.png" alt="Lychee Comppany"></span>
                                 <span>Lychee comppany</span>
                             </p>
                         </div>
@@ -37,20 +42,23 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
+                        <ul class="navbar-nav mb-2 mb-lg-0" id="nav-list">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <!--Import the house icon and add a break line-->
+                                <a class="nav-link active" aria-current="page" href="#"><span class="bi bi-house-door-fill"></span><br class="d-none d-lg-block"> Home</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <!--Import the info icon and a break line-->
+                                    <span class="bi bi-info-circle-fill"></span><br class="d-none d-lg-block">
+                                    About
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tel:0932828127">
+                                    <span class="bi bi-telephone-fill"></span><br class="d-none d-lg-block">
+                                    <span>Contact</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
