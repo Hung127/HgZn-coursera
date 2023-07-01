@@ -1,9 +1,12 @@
+
+/* Set general properties for the elements */
 body {
     color: black;
     background-color: #2D4E6B;
     font-family: 'PT Sans', sans-serif;
 }
 
+/* Set the background color for the navbar */
 #Navbar {
     background-color: #19A7CE !important;
 }
@@ -42,17 +45,13 @@ body {
     margin-top: 3px;
 }
 
-.navbar-brand p span {
-    vertical-align: middle;
-}
-
-.navbar-brand p span img {
+.navbar-brand p span img { /* Lychee commpany */
     width: 20px;
     height: 20px;
 }
 
-.icon-font {
-    margin-right: 5px;
+.navbar-brand p span {
+    vertical-align: middle;
 }
 
 #nav-list {
@@ -61,6 +60,10 @@ body {
 
 #nav-list li  {
     margin-right: 2em;
+}
+
+.icon-font {
+    margin-right: 5px;
 }
 
 
