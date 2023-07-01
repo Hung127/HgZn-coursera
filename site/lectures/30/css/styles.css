@@ -1,5 +1,5 @@
 body {
-    color: #19A7CE;
+    color: black;
     background-color: #2D4E6B;
     font-family: 'PT Sans', sans-serif;
 }
@@ -24,6 +24,7 @@ body {
 
 .navbar-brand h1 { /* Shark Ki */
     font-size: 1.5em;
+    font-weight: 600;
     color: #EBB663;
     text-transform: uppercase;
     margin-bottom: 0px;
