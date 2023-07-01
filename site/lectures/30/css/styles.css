@@ -46,6 +46,11 @@ body {
     vertical-align: middle;
 }
 
+.navbar-brand p span img {
+    width: 20px;
+    height: 20px;
+}
+
 #nav-list {
     text-align: center;
 }
@@ -90,7 +95,12 @@ body {
     }
 
     .align-center-to-logo {
-        margin-top: 3%;
+        margin-top: 5%;
+    }
+
+    .navbar-brand p span img {
+        width: 3vw;
+        height: 3vw;
     }
 
     /* Resize the font to the small devices */
@@ -110,7 +120,13 @@ body {
         font-size: 4vw;
     }
 
+    .navbar-brand p span img {
+        width: 4vw;
+        height: 4vw;
+    }
+
     .align-center-to-logo {
         margin-top: 3%;
     }
+
 }
