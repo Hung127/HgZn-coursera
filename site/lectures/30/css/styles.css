@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     width: 150px;
     height: 150px;
+    margin-right: 20px;
     float: left;
     vertical-align: middle;
 }
@@ -23,7 +24,7 @@ body {
 }
 
 .navbar-brand h1 { /* Shark Ki */
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     color: #EBB663;
     text-transform: uppercase;
@@ -32,13 +33,13 @@ body {
 }
 
 .align-center-to-logo {
-    margin-top: 25%;
+    margin-top: 18%;
 }
 
 .navbar-brand p { /* Lychee company */
     text-transform: uppercase;
     font-size: .7em;
-    margin-top: 15px;
+    margin-top: 3px;
 }
 
 .navbar-brand p span {
@@ -51,4 +52,65 @@ body {
 
 #nav-list li  {
     margin-right: 2em;
+}
+
+
+/* Use media queries for responsive design */
+/* ********** Extra large devices only (large desktops, 1200px and up) ********** */
+@media (min-width: 1200px) {
+
+}
+/* ********** Large devices only (desktops, 992px and up) ********** */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* ********** Medium devices only (tablets, 768px and up) ********** */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Resize the logo to fit the medium screen sizes */
+    #logo-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Re-align the text to the logo */
+    .align-center-to-logo {
+        margin-top: 3%;
+    }
+}
+
+
+/* ********** Small devices only (landscape phones, 576px and up) ********** */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    #logo-img {
+        width: 95px;
+        height: 95px;
+    }
+
+    .align-center-to-logo {
+        margin-top: 3%;
+    }
+
+    /* Resize the font to the small devices */
+    .navbar-brand h1 {
+        font-size: 5vw;
+    }
+}
+
+/* ********** Extra small devices (portrait phones, less than 576px) ********** */
+@media (max-width: 575px) {
+
+    .navbar-brand h1 {
+        font-size: 10vw;
+    }
+
+    .navbar-brand p span {
+        font-size: 4vw;
+    }
+
+    .align-center-to-logo {
+        margin-top: 3%;
+    }
 }
