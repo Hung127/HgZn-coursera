@@ -42,6 +42,11 @@ section {
     transition: background-color 0.5s, color 0.5s;
 }
 
+.br {
+  display:block;
+  margin-bottom: 2.5em;
+}
+
 header p {
     /* Set the paragraph width 95% of the section width */
     width: 95%;
