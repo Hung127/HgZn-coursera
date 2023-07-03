@@ -72,7 +72,7 @@ body {
 /* MAIN CONTENT */
 
 .container .jumbotron img {
-    margin-top: 1.3vw;
+    margin-top: 3vw;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -132,6 +132,53 @@ body {
 }
 
 /* END MAIN CONTENT*/
+
+/* FOOTER */
+
+footer #footer-content {
+    margin-top: 3vw;
+    padding-top: 20px;
+    background-color: #182938;
+    color: white;
+}
+
+#euro-u21 {
+    padding-left: 0px;
+}
+
+#igor-thiago {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#charleston-battery {
+    padding-right: 0px;
+}
+
+section > span {
+    display: block;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+section span .mini-content {
+    font-size: .7em;
+    color: greenyellow;
+    font-style: italic;
+}
+
+section span em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.footer-title {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* END FOOTER */
 
 
 /* Use media queries for responsive design */
@@ -195,6 +242,10 @@ body {
     #main-content > #home-tiles > div {
         padding: 0px;
     }
+
+    footer section {
+        text-align: center;
+    }
 }
 
 /* ********** Extra small devices (portrait phones, less than 576px) ********** */
@@ -219,6 +270,10 @@ body {
 
     #main-content > #home-tiles > div {
         padding: 0px;
+    }
+
+    footer section {
+        text-align: center;
     }
 
 }
