@@ -1,7 +1,7 @@
 
 /* Set general properties for the elements */
 body {
-    color: black;
+    color: white;
     background-color: #2D4E6B;
     font-family: 'PT Sans', sans-serif;
 }
@@ -131,10 +131,30 @@ body {
     color: white;
 }
 
+#main-content .information {
+    margin-top: 5%;
+    font-size: .8em;
+}
+
+
+/* set the sizes for shark images in about.html */
+#main-content .information .about-shark img{ 
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+/* add some spaces between the images + text groups */
+#main-content .information .row {
+    margin-bottom: 50px;
+}
+
 /* END MAIN CONTENT*/
 
 /* FOOTER */
 
+/* set the font for footer*/
 footer #footer-content {
     margin-top: 3vw;
     padding-top: 20px;
@@ -246,6 +266,15 @@ section span em {
     footer section {
         text-align: center;
     }
+
+    #main-content .information > div > div > div:nth-child(2) {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    #main-content .information hr {
+        margin-bottom: 50px;
+    }
 }
 
 /* ********** Extra small devices (portrait phones, less than 576px) ********** */
@@ -274,6 +303,15 @@ section span em {
 
     footer section {
         text-align: center;
+    }
+
+    #main-content .information > div > div > div:nth-child(2) {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    #main-content .information hr {
+        margin-bottom: 50px;
     }
 
 }

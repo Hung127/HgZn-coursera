@@ -1,0 +1,317 @@
+
+/* Set general properties for the elements */
+body {
+    color: white;
+    background-color: #2D4E6B;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+/* HEADER */
+/* Set the background color for the navbar */
+#Navbar {
+    background-color: #19A7CE !important;
+}
+
+#logo-img {
+    background-image: url('../images/LogoSharkKiTransparent.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    float: left;
+    vertical-align: middle;
+}
+
+.navbar-brand a, .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand h1 { /* Shark Ki */
+    font-size: 2em;
+    font-weight: 600;
+    color: #EBB663;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.align-center-to-logo {
+    margin-top: 18%;
+}
+
+.navbar-brand p { /* Lychee company */
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 3px;
+}
+
+.navbar-brand p span img {
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+#nav-list {
+    text-align: center;
+}
+
+#nav-list li  {
+    margin-right: 2em;
+}
+
+.icon-font {
+    margin-right: 5px;
+}
+/* END HEADER */
+
+/* MAIN CONTENT */
+
+.container .jumbotron img {
+    margin-top: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 2.4px solid black;
+    box-shadow: 2px 1.5px 1.5px 0.5px black;
+    margin-bottom: 20px;
+}
+
+.row {
+    width: 100%;
+    margin: 0px;
+}
+
+#home-tiles > div:nth-child(1) {
+    padding-left: 0px;
+}
+
+#home-tiles > div:nth-child(2) {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#home-tiles > div:nth-child(3) {
+    padding-right: 0px;
+}
+
+#shark1-tile, #shark2-tile, #map-tile {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+    border: 2px solid black;
+}
+
+#shark1-tile:hover, #shark2-tile:hover, #map-tile:hover {
+    box-shadow: 1px 1px 4px 2px black;
+}
+
+#shark1-tile, #shark2-tile {
+    background: url('../images/fiona-ayerst-TdENDAHtPBw-unsplash.jpg') no-repeat;
+    background-position: center;
+}
+
+#shark1-tile > span, #shark2-tile > span, #map-tile span {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display:block;
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #182938;
+    opacity: .7;
+    color: white;
+}
+
+#main-content .information {
+    margin-top: 5%;
+    font-size: .8em;
+}
+
+
+/* set the sizes for shark images in about.html */
+#main-content .information .about-shark img{ 
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+/* add some spaces between the images + text groups */
+#main-content .information .row {
+    margin-bottom: 50px;
+}
+
+/* END MAIN CONTENT*/
+
+/* FOOTER */
+
+/* set the font for footer*/
+footer #footer-content {
+    margin-top: 3vw;
+    padding-top: 20px;
+    background-color: #182938;
+    color: white;
+}
+
+#euro-u21 {
+    padding-left: 0px;
+}
+
+#igor-thiago {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#charleston-battery {
+    padding-right: 0px;
+}
+
+section > span {
+    display: block;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+section span .mini-content {
+    font-size: .7em;
+    color: greenyellow;
+    font-style: italic;
+}
+
+section span em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.footer-title {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* END FOOTER */
+
+
+/* Use media queries for responsive design */
+/* ********** Extra large devices only (large desktops, 1200px and up) ********** */
+@media (min-width: 1200px) {
+
+}
+/* ********** Large devices only (desktops, 992px and up) ********** */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* ********** Medium devices only (tablets, 768px and up) ********** */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Resize the logo to fit the medium screen sizes */
+    #logo-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Re-align the text to the logo */
+    .align-center-to-logo {
+        margin-top: 3%;
+    }
+
+    #home-tiles > div:nth-child(2) {
+        padding-right: 0px;
+        padding-left: 12px;
+    }
+
+    #home-tiles > div:nth-child(3) {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+
+/* ********** Small devices only (landscape phones, 576px and up) ********** */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    #logo-img {
+        width: 95px;
+        height: 95px;
+    }
+
+    .align-center-to-logo {
+        margin-top: 5%;
+    }
+
+    .navbar-brand p span img {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    /* Resize the font to the small devices */
+    .navbar-brand h1 {
+        font-size: 5vw;
+    }
+
+    #main-content > #home-tiles > div {
+        padding: 0px;
+    }
+
+    footer section {
+        text-align: center;
+    }
+
+    #main-content .information > div > div > div:nth-child(2) {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    #main-content .information hr {
+        margin-bottom: 50px;
+    }
+}
+
+/* ********** Extra small devices (portrait phones, less than 576px) ********** */
+@media (max-width: 575px) {
+
+    .navbar-brand h1 {
+        font-size: 10vw;
+    }
+
+    .navbar-brand p span {
+        font-size: 2.5vw;
+    }
+
+    .navbar-brand p span img {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .align-center-to-logo {
+        margin-top: 3%;
+    }
+
+    #main-content > #home-tiles > div {
+        padding: 0px;
+    }
+
+    footer section {
+        text-align: center;
+    }
+
+    #main-content .information > div > div > div:nth-child(2) {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    #main-content .information hr {
+        margin-bottom: 50px;
+    }
+
+}
